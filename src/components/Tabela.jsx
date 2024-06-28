@@ -1,4 +1,6 @@
-const tabelaIMC=() => {
+import React from "react"
+
+function TabelaIMC() {
   return(
     <table>
       <thead>
@@ -32,7 +34,7 @@ const tabelaIMC=() => {
             <td>Entre 35 e 39,9</td>
           </tr>
           <tr>
-            <td>Obesidade Grau III ou Morbida</td>
+            <td>Obesidade Grau III ou morbida</td>
             <td>Maior que 40</td>
           </tr>
         </tbody>
@@ -41,4 +43,4 @@ const tabelaIMC=() => {
   )
 }
 
-export default tabelaIMC()
+export default TabelaIMC()

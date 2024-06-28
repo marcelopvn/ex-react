@@ -1,19 +1,22 @@
 import { useState } from 'react'
-import calculo from './components/calculo'
-import tabelaIMC from './components/Tabela'
+import TabelaIMC from './components/Tabela'
+import Peso from './components/Peso'
+import Altura from './components/Altura'
+import CalcularIMC from './components/CalcularIMC'
+import Resultado from './components/Resultado'
 
 function App() {
-  const [resultado,setresultado]=useState(0)
-  const [peso,setpeso]=useState(0)
-  const [altura,setaltura]=useState(0)
+  const [resultado,setResultado]=useState(0)
+  const [peso,setPeso]=useState(0)
+  const [altura,setAltura]=useState(0)
 
   return (
     <>
-    {fpeso(peso,setpeso)}
-    {faltura(altura,setaltura)}
-    {fcalcular(peso,altura,setresultado)}
-    {calculo()}
-    {tabelaIMC()}
+    <Peso p={peso} sp={setPeso}/>
+    <Altura a={altura} sa={setAltura}/>
+    <CalcularIMC p={peso} a={altura} sr={setResultado}/>
+    <Resultado r={resultado}/>
+    <TabelaIMC/>
     </>
   )
 }
