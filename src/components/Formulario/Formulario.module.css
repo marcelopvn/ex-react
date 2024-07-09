@@ -1,0 +1,98 @@
+body{
+  background-color: rgb(59, 59, 59);
+}
+
+.form {
+  display: block;
+  margin-left: 750px;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.altura__block label,
+.peso__block label {
+  display: block;
+  font-weight: bold;
+  font-size: 13px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-top: 12px;
+}
+
+.altura__block input,
+.peso__block input {
+  width: 130px;
+  padding: 6px 10px;
+  border: 1px solid ;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.peso__block {
+  margin-left: 30px;
+}
+
+.buttons {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+}
+
+.buttons button {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  font-size: 13px;
+  width: 130px;
+  text-decoration: none;
+  color: var(--corBranca);
+  background-color: var(--corPrincipal);
+  padding: 12px 32px 12px 12px;
+  border: none;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+
+
+.buttons button:hover {
+  background-color:rgb(192, 56, 56);
+}
+
+.buttons #calc {
+  margin-left: 30px !important;
+}
+
+.buttons .clear:hover {
+  background-color:rgb(192, 56, 56);
+}
+
+.buttons .clear {
+  margin-right: 80px;
+}
+
+.buttons button i {
+  margin-left: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .inputs {
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .buttons {
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+  }
+}
