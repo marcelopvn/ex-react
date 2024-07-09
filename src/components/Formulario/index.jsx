@@ -5,11 +5,11 @@ const Formulario = ({setAltura, setPeso, calculoIMC, clean}) => {
     <form className={styles.form}>
       <div className={styles.inputs}>
         <div className={styles.altura__block}>
-          <label htmlFor="altura">Altura <small>(ex.: 1,70)</small></label>
+          <label htmlFor="altura">Altura <small>(ex.: 1,80)</small></label>
           <input type="number" id='altura' onBlur={setAltura} min={0}/>
         </div>
         <div className={styles.peso__block}>
-          <label htmlFor="peso">Peso <small>(ex.: 69,2)</small></label>
+          <label htmlFor="peso">Peso <small>(ex.: 86,2)</small></label>
           <input type="number" id='peso' onBlur={setPeso} min={0}/>
         </div>
       </div>

@@ -6,7 +6,7 @@ const Tabela = ({imc}) => {
         <table className={styles.table__imc} cellSpacing={0} >
           <thead>
               <tr>
-                <th colSpan={3}>Veja a interpretação do IMC</th>
+                <th colSpan={3}>Tabela IMC</th>
               </tr>
           </thead>
           <tbody>
@@ -42,7 +42,7 @@ const Tabela = ({imc}) => {
             </tr>
           </tbody>
         </table>
-        <h2>seu imc: <span>{imc}</span></h2>
+        <h2>IMC : <span>{imc}</span></h2>
       </>
     )
 }

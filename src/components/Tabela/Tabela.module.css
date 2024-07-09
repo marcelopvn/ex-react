@@ -9,7 +9,7 @@
 
 .table__imc thead tr th {
   text-align: left;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 8px;
@@ -33,6 +33,10 @@
 
 span {
   padding-left: 12px;
+}
+
+.td .active {
+  color: green;
 }
 
 h2{
